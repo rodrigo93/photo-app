@@ -6,3 +6,9 @@
 
 # Hidden files
 .zshrc
+
+# IntelliJ files
+.idea
+
+# Bundle files
+.bundle

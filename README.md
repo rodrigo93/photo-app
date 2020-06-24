@@ -24,4 +24,18 @@ For development environments...
 $ bundle install --without production
 ```
 
-More information will be added soon...
+# Troubleshooting
+
+## Ovirt Engine SDK problem
+
+```shell
+An error occurred while installing ovirt-engine-sdk (4.3.1), and Bundler cannot continue.
+Make sure that `gem install ovirt-engine-sdk -v '4.3.1' --source 'https://rubygems.org/'` succeeds before bundling.
+```
+
+If you got this error while bundling, make sure to have `gcc`, `libcurl4-openssl-dev`, `libxml2-dev`, `ruby` and `ruby-dev` packages installed in your machine.
+Otherwise, for Ubuntu users, just run the following command in your terminal:
+
+```shell
+$ sudo apt -y install gcc libcurl4-openssl-dev libxml2-dev ruby ruby-dev
+```
